@@ -1,0 +1,1049 @@
+header {
+    .top-header {
+        padding: 15px 0;
+        background-color: #232323;
+        color: white;
+        font-size: 0.9em;
+
+        i {
+            margin-right: 10px;
+        }
+
+        .info {
+            .address {
+                margin-right: 20px;
+            }
+
+            .email {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: #D07016;
+                    }
+                }
+            }
+        }
+
+        .contact {
+
+            .hours {
+                margin-right: 25px;
+            }
+
+            .social-m {
+                margin-right: 25px;
+
+                i {
+                    color: white;
+                    transition: 0.3s ease-in-out;
+
+                }
+
+                a {
+                    &:hover {
+                        i {
+                            color: #D07016;
+                        }
+                    }
+                }
+            }
+
+            .quote {
+                a {
+                    text-decoration: none;
+                    padding: 5px 15px;
+                    background-color: #D07016;
+                    color: white;
+                    transition: 0.3s ease-in-out;
+                    border-radius: 4px;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: black;
+                        background-color: #ff9c3e;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-header {
+        padding: 15px 0;
+
+
+        .menu {
+
+            .menu-name {
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    padding: 20px;
+                    color: #232323;
+                    transition: 0.4s ease-in-out;
+                    font-size: 15px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #ff9c3e;
+                    }
+
+                }
+
+                .sub-menu {
+                    position: absolute;
+                    top: 100%;
+                    left: 0%;
+                    width: 200px;
+                    box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+                    transform: translateY(-20px);
+                    transition: 0.4s ease-in-out;
+                    opacity: 0;
+                    visibility: hidden;
+                    background-color: white;
+                    border-radius: 1px;
+z-index: 5;
+                    li {
+                        border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+
+                        a {
+                            padding: 15px 20px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .sub-menu {
+                        transform: translateY(0);
+                        visibility: visible;
+                        opacity: 1;
+
+                    }
+                }
+            }
+        }
+
+        .icon {
+            display: none;
+            color: #D07016;
+            font-size: 35px;
+        }
+    }
+}
+
+.about {
+    background-image: url(http://quickdevs.com/demo/agros/assets/images/home-slider-1.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+
+    .contain {
+        margin: auto;
+        width: 95%;
+
+        .about-left {
+            h1 {
+                font-size: 4vw;
+                margin-left: 40px;
+                position: relative;
+                margin-bottom: 30px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    bottom: 12px;
+                    left: -40px;
+                    // height: 100%;
+                    width: 8px;
+                    background-color: #FFCC00;
+
+                }
+            }
+
+            p {
+                margin-left: 40px;
+                font-size: 20px;
+                margin-bottom: 60px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #FFCC00;
+                background-color: transparent;
+                padding: 15px 35px;
+                border: 1px solid #FFCC00;
+                font-weight: 600;
+
+                i {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background-color: #FFCC00;
+                    border: 1px solid #FFCC00;
+                    color: #232323;
+                }
+            }
+        }
+
+        .about-right {
+            margin-top: 30px;
+
+            a {
+                text-decoration: none;
+                opacity: 0.4;
+                transition: 0.3s ease-in-out;
+
+                .link-left {
+                    margin-bottom: 25px;
+
+                    h3 {
+                        margin-bottom: 10px;
+                        color: white;
+                    }
+
+                    h4 {
+                        color: #FFCC00;
+                        font-size: 18px;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+
+                i {
+                    color: white;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        .arrows {
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+
+            a {
+                padding: 15px;
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                opacity: 0.5;
+                margin-right: 0;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.features {
+    background-color: #EDF2F4;
+    padding: 80px 0;
+
+    .feature {
+        // width: 90%;
+        // margin: auto;
+        background-color: white;
+        margin: 15px 0;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+        border-radius: 4px;
+
+        img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #8B8B8B;
+        }
+
+    }
+
+
+}
+
+.about-agros {
+    padding: 80px 0;
+
+    .about-agros-right {
+        h5 {
+            color: #8B8B8B;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #8B8B8B;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .about-box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+            display: flex;
+            flex-wrap: nowrap;
+
+            img {
+                width: 60px;
+                height: 60px;
+                margin-right: 15px;
+            }
+
+            .box-right {
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.choose {
+    position: relative;
+
+    .img {
+        width: 50%;
+        height: 500px;
+        background-image: url(http://quickdevs.com/demo/agros/images/commons/agros-img-19.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+    }
+
+    .products {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        height: auto;
+        width: 55%;
+        background-color: #232323;
+        padding: 80px 80px 50px 80px;
+z-index: 5;
+        h4 {
+            color: #D07016;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #8B8B8B;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .product-box {
+            img {
+                width: 50px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.categs {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-image: url(http://quickdevs.com/demo/agros/images/commons/pages-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    padding: 150px 0 80px 0;
+    position: relative;
+    background-color: black;
+    .categ{
+        text-align: center;
+        padding: 30px;
+        color: white;
+        background-color: #232323;
+        opacity: 0.7;
+        margin: 15px 0;
+        transition: 0.3s ease-in-out;
+        border-radius: 4px;
+        img{
+            width: 60px;
+        }
+        h3{
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        &:hover{
+            background-color: #FFCC00;
+            color: black;
+        }
+    }
+}
+.team{
+    padding: 80px 0;
+    .team-head{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+        h1{
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 20px;
+            color: #8B8B8B;
+        }
+    }
+    .member{
+        .member-img{
+            position: relative;
+            img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            .member-name{
+                width: 100%;
+                background-color: #EDF2F4;
+                padding: 30px 0;
+                text-align: center;
+                margin-top: 0;
+                p{
+                    color: #8B8B8B;
+                }
+            }
+            .member-contact{
+                position: absolute;
+                bottom: 130px;
+                text-align: center;
+                width: 100%;
+                i{
+                    padding: 10px;
+                    background-color: #D07016;
+                    color: white;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: #FFCC00;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.reviews{
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-image: url(http://quickdevs.com/demo/agros/images/commons/pages-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    position: relative;
+    background-color: black;
+    padding: 80px 0;
+    .reviews-top{
+        margin-bottom: 80px;
+        .review{
+            padding: 25px;
+            background-color: #232323;
+            opacity: 0.9;
+            color: white;
+            border-radius: 4px;
+            i{
+                font-size:30px;
+                color: #D07016;
+                margin-bottom: 15px;
+            }
+            p{
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+            hr{
+                
+                margin-bottom: 20px;
+            }
+            .review-user{
+                img{
+                    width: 60px;
+                    height: auto;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                    margin-right: 15px;
+                }
+                .review-user-name{
+                    h5{
+                        color: #D07016;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    }
+    .reviews-bottom{
+        opacity: 0.9;
+        color: white;
+        text-align: center;
+        .review-box{
+            
+            img{
+                width: 60px;
+                margin-bottom: 15px;
+            }
+            h1{
+                font-size: 40px;
+
+            }
+            h2{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.news{
+    padding: 80px 0;
+    .news-top{
+        width: 55%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+        h1{
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 20px;
+            color: #8B8B8B;
+        }
+    }
+    .news-bottom{
+        .new{
+            background-color: white;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+          
+            img{
+                width: 100%;
+            }
+            .new-top{
+                padding: 20px;
+                p{
+                    color: #8B8B8B;
+                    margin-bottom: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    font-weight: 600;
+                    display: block;
+                    transition: 0.4s ease-in-out;
+                    margin-bottom: 20px;
+                    &:hover{
+                        color: #D07016;
+
+                    }
+                }
+                
+                .news-admin{
+                    img{
+                        width: 60px;
+                        height: auto;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        margin-right: 15px;
+                    }
+                    .admin-name{
+                        h5{
+                            color: #D07016;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                
+            }
+            .img{
+                overflow: hidden;
+                img{
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                   
+
+                    cursor: pointer;
+                        transform: scale(1.1);
+                    
+                    
+                }
+                }
+                
+            }
+            
+            
+            
+        }
+    }
+}
+footer{
+    background-color: #232323;
+    padding: 80px 0;
+    .footer-top{
+        
+        .footer-top-row{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+            padding-bottom: 60px;
+            .contact{
+                .icon{
+                    i{
+                        font-size: 40px;
+                        margin-right: 20px;
+                        color: #D07016;
+                    }
+                    
+                }
+                .contact-right{
+                    a{
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: white;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color: #D07016;
+                        }
+                    }
+                    p{
+                        margin-top: 5px;
+                        color: white;
+    
+                    }
+                    h3{
+                        font-size: 20px;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+    .footer-mdl{
+        padding: 70px 0;
+        .footer-mdl-row{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+            padding-bottom: 60px;
+            .logo{
+                width: 40%;
+                
+                img{
+                    width: 60% ;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 17px;
+                    line-height: 1.5;
+                    color: white;
+                    margin-bottom: 20px;
+                    width: 80%;
+                }
+                .icons{
+                    i{
+                        margin-right: 15px;
+                        font-size: 18px;
+                        color: white;
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color:#D07016;
+                            cursor: pointer;
+    
+                        }
+                    }
+                }
+            }
+            .links{
+                width: 20%;
+                h3{
+                    color: #FFCC00;
+                    margin-bottom: 40px;
+                    font-size: 20px;
+                }
+                ul{
+                    li{
+                        margin-bottom: 15px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: 16px;
+                            transition: 0.4s ease-in-out;
+                            &:hover{
+                                color: #D07016;
+                            }
+                        }
+                    }
+                }
+                .news-link{
+                    margin-bottom: 15px;
+                    img{
+                        width: 70px;
+                        margin-right: 15px;
+                    }
+                    .link-right{
+                        width: 60%;
+                        
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            transition: 0.3s ease-in-out;
+                            &:hover{
+                                color:#D07016;
+                            }
+                        }
+                        p{
+                            margin-top: 10px;
+                            color: #8B8B8B;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .footer-bottom{
+        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                color: #D07016;
+            }
+        }
+        ul{
+            li{
+                a{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:576px){
+    .about{
+        .contain{
+            .row{
+                .about-left{
+                    a{
+                        padding: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .reviews{
+        .container{
+            width: 95%;
+            margin: auto;
+            .reviews-top{
+                .review{
+                    margin-bottom: 15px;
+                    
+                }
+                .review3, .review2 {
+                    display: none;
+                }
+                
+            }
+            .reviews-bottom{
+                .review-box{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        .top-header {
+            display: none;
+        }
+
+        .bottom-header {
+            .menu {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+            }
+        }
+    }
+
+    .about {
+
+        .about-right {
+            display: none;
+        }
+    }
+    .choose{
+        .img{
+            width: 100%;
+        }
+        .products{
+            position: static;
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 30px;
+        }
+    }
+    .categs{
+        padding: 40px 0;
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+
+    }
+    .reviews{
+        .container{
+            width: 95%;
+            margin: auto;
+            .reviews-top{
+                .review{
+                    margin-bottom: 15px;
+                    
+                }
+                .review3 {
+                    display: none;
+                }
+                
+            }
+            .reviews-bottom{
+                .review-box{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    footer{
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+        // display: block;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:992px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        .top-header {
+            .info {
+                .email {
+                    display: none;
+                }
+            }
+
+            .contact {
+                .quote {
+                    display: none;
+                }
+            }
+        }
+
+        .bottom-header {
+            .menu {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+            }
+
+        }
+    }
+
+    .about {
+        .about-right {
+            display: none;
+        }
+    }
+    .choose{
+        .img{
+            width: 100%;
+        }
+        .products{
+            position: static;
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 30px;
+        }
+    }
+    .categs{
+        padding: 40px 0;
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+
+    }
+    .reviews{
+        .container{
+            width: 95%;
+            margin: auto;
+            .reviews-top{
+                .review{
+                    margin-bottom: 15px;
+                    
+                }
+                .review3 {
+                    display: none;
+                }
+                
+            }
+            .reviews-bottom{
+                .review-box{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    footer{
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        .top-header {
+            .contact {
+                .quote {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .about {
+        .about-right {
+            display: none;
+        }
+    }
+    footer{
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+    }
+    
+}
+
+@media(min-width:1200px) {
+    .about {
+        .arrows {
+            display: none;
+        }
+    }
+}

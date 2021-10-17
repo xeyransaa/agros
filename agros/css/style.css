@@ -1,0 +1,934 @@
+header .top-header {
+  padding: 15px 0;
+  background-color: #232323;
+  color: white;
+  font-size: 0.9em;
+}
+
+header .top-header i {
+  margin-right: 10px;
+}
+
+header .top-header .info .address {
+  margin-right: 20px;
+}
+
+header .top-header .info .email a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .top-header .info .email a:hover {
+  color: #D07016;
+}
+
+header .top-header .contact .hours {
+  margin-right: 25px;
+}
+
+header .top-header .contact .social-m {
+  margin-right: 25px;
+}
+
+header .top-header .contact .social-m i {
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .top-header .contact .social-m a:hover i {
+  color: #D07016;
+}
+
+header .top-header .contact .quote a {
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #D07016;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+header .top-header .contact .quote a:hover {
+  color: black;
+  background-color: #ff9c3e;
+}
+
+header .bottom-header {
+  padding: 15px 0;
+}
+
+header .bottom-header .menu .menu-name {
+  position: relative;
+}
+
+header .bottom-header .menu .menu-name a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: #232323;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+header .bottom-header .menu .menu-name a:hover {
+  color: #ff9c3e;
+}
+
+header .bottom-header .menu .menu-name .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 200px;
+  -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+          box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+  border-radius: 1px;
+  z-index: 5;
+}
+
+header .bottom-header .menu .menu-name .sub-menu li {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+header .bottom-header .menu .menu-name .sub-menu li a {
+  padding: 15px 20px;
+}
+
+header .bottom-header .menu .menu-name:hover .sub-menu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+header .bottom-header .icon {
+  display: none;
+  color: #D07016;
+  font-size: 35px;
+}
+
+.about {
+  background-image: url(http://quickdevs.com/demo/agros/assets/images/home-slider-1.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.about .contain {
+  margin: auto;
+  width: 95%;
+}
+
+.about .contain .about-left h1 {
+  font-size: 4vw;
+  margin-left: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.about .contain .about-left h1::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: -40px;
+  width: 8px;
+  background-color: #FFCC00;
+}
+
+.about .contain .about-left p {
+  margin-left: 40px;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.about .contain .about-left a {
+  text-decoration: none;
+  color: #FFCC00;
+  background-color: transparent;
+  padding: 15px 35px;
+  border: 1px solid #FFCC00;
+  font-weight: 600;
+}
+
+.about .contain .about-left a i {
+  margin-left: 10px;
+}
+
+.about .contain .about-left a:hover {
+  background-color: #FFCC00;
+  border: 1px solid #FFCC00;
+  color: #232323;
+}
+
+.about .contain .about-right {
+  margin-top: 30px;
+}
+
+.about .contain .about-right a {
+  text-decoration: none;
+  opacity: 0.4;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.about .contain .about-right a .link-left {
+  margin-bottom: 25px;
+}
+
+.about .contain .about-right a .link-left h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about .contain .about-right a .link-left h4 {
+  color: #FFCC00;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.about .contain .about-right a i {
+  color: white;
+}
+
+.about .contain .about-right a:hover {
+  opacity: 1;
+}
+
+.about .contain .about-right a.active {
+  opacity: 1;
+}
+
+.about .contain .arrows {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+.about .contain .arrows a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  margin-right: 0;
+}
+
+.about .contain .arrows a:hover {
+  opacity: 1;
+}
+
+.features {
+  background-color: #EDF2F4;
+  padding: 80px 0;
+}
+
+.features .feature {
+  background-color: white;
+  margin: 15px 0;
+  padding: 30px 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+          box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+  border-radius: 4px;
+}
+
+.features .feature img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.features .feature h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.features .feature p {
+  font-size: 16px;
+  color: #8B8B8B;
+}
+
+.about-agros {
+  padding: 80px 0;
+}
+
+.about-agros .about-agros-right h5 {
+  color: #8B8B8B;
+}
+
+.about-agros .about-agros-right h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-agros .about-agros-right p {
+  color: #8B8B8B;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.about-agros .about-agros-right .about-box {
+  background-color: white;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+          box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.about-agros .about-agros-right .about-box img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.about-agros .about-agros-right .about-box .box-right p {
+  margin-bottom: 0;
+}
+
+.choose {
+  position: relative;
+}
+
+.choose .img {
+  width: 50%;
+  height: 500px;
+  background-image: url(http://quickdevs.com/demo/agros/images/commons/agros-img-19.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.choose .products {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  height: auto;
+  width: 55%;
+  background-color: #232323;
+  padding: 80px 80px 50px 80px;
+  z-index: 5;
+}
+
+.choose .products h4 {
+  color: #D07016;
+  margin-bottom: 15px;
+}
+
+.choose .products h1 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.choose .products p {
+  font-size: 16px;
+  color: #8B8B8B;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.choose .products .product-box img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.choose .products .product-box h3 {
+  color: white;
+  font-size: 16px;
+}
+
+.categs {
+  padding: 150px 0 80px 0;
+  position: relative;
+  background-color: black;
+}
+
+.categs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(http://quickdevs.com/demo/agros/images/commons/pages-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.categs .categ {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  background-color: #232323;
+  opacity: 0.7;
+  margin: 15px 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.categs .categ img {
+  width: 60px;
+}
+
+.categs .categ h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.categs .categ:hover {
+  background-color: #FFCC00;
+  color: black;
+}
+
+.team {
+  padding: 80px 0;
+}
+
+.team .team-head {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team .team-head h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.team .team-head p {
+  font-size: 20px;
+  color: #8B8B8B;
+}
+
+.team .member .member-img {
+  position: relative;
+}
+
+.team .member .member-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.team .member .member-img .member-name {
+  width: 100%;
+  background-color: #EDF2F4;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 0;
+}
+
+.team .member .member-img .member-name p {
+  color: #8B8B8B;
+}
+
+.team .member .member-img .member-contact {
+  position: absolute;
+  bottom: 130px;
+  text-align: center;
+  width: 100%;
+}
+
+.team .member .member-img .member-contact i {
+  padding: 10px;
+  background-color: #D07016;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.team .member .member-img .member-contact i:hover {
+  background-color: #FFCC00;
+  cursor: pointer;
+}
+
+.reviews {
+  position: relative;
+  background-color: black;
+  padding: 80px 0;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-image: url(http://quickdevs.com/demo/agros/images/commons/pages-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews .reviews-top {
+  margin-bottom: 80px;
+}
+
+.reviews .reviews-top .review {
+  padding: 25px;
+  background-color: #232323;
+  opacity: 0.9;
+  color: white;
+  border-radius: 4px;
+}
+
+.reviews .reviews-top .review i {
+  font-size: 30px;
+  color: #D07016;
+  margin-bottom: 15px;
+}
+
+.reviews .reviews-top .review p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.reviews .reviews-top .review hr {
+  margin-bottom: 20px;
+}
+
+.reviews .reviews-top .review .review-user img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 15px;
+}
+
+.reviews .reviews-top .review .review-user .review-user-name h5 {
+  color: #D07016;
+  font-size: 18px;
+}
+
+.reviews .reviews-bottom {
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+}
+
+.reviews .reviews-bottom .review-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.reviews .reviews-bottom .review-box h1 {
+  font-size: 40px;
+}
+
+.reviews .reviews-bottom .review-box h2 {
+  font-size: 16px;
+}
+
+.news {
+  padding: 80px 0;
+}
+
+.news .news-top {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.news .news-top h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.news .news-top p {
+  font-size: 20px;
+  color: #8B8B8B;
+}
+
+.news .news-bottom .new {
+  background-color: white;
+  -webkit-box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+          box-shadow: 0 0 5px rgba(128, 128, 128, 0.308);
+}
+
+.news .news-bottom .new img {
+  width: 100%;
+}
+
+.news .news-bottom .new .new-top {
+  padding: 20px;
+}
+
+.news .news-bottom .new .new-top p {
+  color: #8B8B8B;
+  margin-bottom: 20px;
+}
+
+.news .news-bottom .new .new-top a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.news .news-bottom .new .new-top a:hover {
+  color: #D07016;
+}
+
+.news .news-bottom .new .new-top .news-admin img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 15px;
+}
+
+.news .news-bottom .new .new-top .news-admin .admin-name h5 {
+  color: #D07016;
+  font-size: 18px;
+}
+
+.news .news-bottom .new .img {
+  overflow: hidden;
+}
+
+.news .news-bottom .new .img img {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.news .news-bottom .new .img img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  background-color: #232323;
+  padding: 80px 0;
+}
+
+footer .footer-top .footer-top-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+  padding-bottom: 60px;
+}
+
+footer .footer-top .footer-top-row .contact .icon i {
+  font-size: 40px;
+  margin-right: 20px;
+  color: #D07016;
+}
+
+footer .footer-top .footer-top-row .contact .contact-right a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .footer-top .footer-top-row .contact .contact-right a:hover {
+  color: #D07016;
+}
+
+footer .footer-top .footer-top-row .contact .contact-right p {
+  margin-top: 5px;
+  color: white;
+}
+
+footer .footer-top .footer-top-row .contact .contact-right h3 {
+  font-size: 20px;
+  color: white;
+}
+
+footer .footer-mdl {
+  padding: 70px 0;
+}
+
+footer .footer-mdl .footer-mdl-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+  padding-bottom: 60px;
+}
+
+footer .footer-mdl .footer-mdl-row .logo {
+  width: 40%;
+}
+
+footer .footer-mdl .footer-mdl-row .logo img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+footer .footer-mdl .footer-mdl-row .logo p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: white;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+footer .footer-mdl .footer-mdl-row .logo .icons i {
+  margin-right: 15px;
+  font-size: 18px;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .footer-mdl .footer-mdl-row .logo .icons i:hover {
+  color: #D07016;
+  cursor: pointer;
+}
+
+footer .footer-mdl .footer-mdl-row .links {
+  width: 20%;
+}
+
+footer .footer-mdl .footer-mdl-row .links h3 {
+  color: #FFCC00;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+footer .footer-mdl .footer-mdl-row .links ul li {
+  margin-bottom: 15px;
+}
+
+footer .footer-mdl .footer-mdl-row .links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+footer .footer-mdl .footer-mdl-row .links ul li a:hover {
+  color: #D07016;
+}
+
+footer .footer-mdl .footer-mdl-row .links .news-link {
+  margin-bottom: 15px;
+}
+
+footer .footer-mdl .footer-mdl-row .links .news-link img {
+  width: 70px;
+  margin-right: 15px;
+}
+
+footer .footer-mdl .footer-mdl-row .links .news-link .link-right {
+  width: 60%;
+}
+
+footer .footer-mdl .footer-mdl-row .links .news-link .link-right a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .footer-mdl .footer-mdl-row .links .news-link .link-right a:hover {
+  color: #D07016;
+}
+
+footer .footer-mdl .footer-mdl-row .links .news-link .link-right p {
+  margin-top: 10px;
+  color: #8B8B8B;
+}
+
+footer .footer-bottom {
+  color: white;
+}
+
+footer .footer-bottom a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .footer-bottom a:hover {
+  color: #D07016;
+}
+
+footer .footer-bottom ul li a {
+  margin-right: 15px;
+}
+
+@media (max-width: 576px) {
+  .about .contain .row .about-left a {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .reviews .container {
+    width: 95%;
+    margin: auto;
+  }
+  .reviews .container .reviews-top .review {
+    margin-bottom: 15px;
+  }
+  .reviews .container .reviews-top .review3, .reviews .container .reviews-top .review2 {
+    display: none;
+  }
+  .reviews .container .reviews-bottom .review-box {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  header .top-header {
+    display: none;
+  }
+  header .bottom-header .menu {
+    display: none;
+  }
+  header .bottom-header .icon {
+    display: block;
+  }
+  .about .about-right {
+    display: none;
+  }
+  .choose .img {
+    width: 100%;
+  }
+  .choose .products {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  .categs {
+    padding: 40px 0;
+  }
+  .categs .container {
+    width: 95%;
+    margin: auto;
+  }
+  .reviews .container {
+    width: 95%;
+    margin: auto;
+  }
+  .reviews .container .reviews-top .review {
+    margin-bottom: 15px;
+  }
+  .reviews .container .reviews-top .review3 {
+    display: none;
+  }
+  .reviews .container .reviews-bottom .review-box {
+    margin-bottom: 25px;
+  }
+  footer .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  header .top-header .info .email {
+    display: none;
+  }
+  header .top-header .contact .quote {
+    display: none;
+  }
+  header .bottom-header .menu {
+    display: none;
+  }
+  header .bottom-header .icon {
+    display: block;
+  }
+  .about .about-right {
+    display: none;
+  }
+  .choose .img {
+    width: 100%;
+  }
+  .choose .products {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  .categs {
+    padding: 40px 0;
+  }
+  .categs .container {
+    width: 95%;
+    margin: auto;
+  }
+  .reviews .container {
+    width: 95%;
+    margin: auto;
+  }
+  .reviews .container .reviews-top .review {
+    margin-bottom: 15px;
+  }
+  .reviews .container .reviews-top .review3 {
+    display: none;
+  }
+  .reviews .container .reviews-bottom .review-box {
+    margin-bottom: 25px;
+  }
+  footer .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  header .top-header .contact .quote {
+    display: none;
+  }
+  .about .about-right {
+    display: none;
+  }
+  footer .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about .arrows {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
